@@ -1,0 +1,59 @@
+{
+  "name": "@sun-protocol/permit2-sdk",
+  "version": "1.0.0",
+  "description": "Permit2 SDK for TRON — TypeScript library for Permit2 allowance transfers",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "tsc --noEmit",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "prepublishOnly": "npm run build",
+    "publish:beta": "npm publish --tag beta --access public",
+    "publish:latest": "npm publish --access public"
+  },
+  "keywords": [
+    "permit2",
+    "tron",
+    "allowance",
+    "eip712",
+    "sdk",
+    "typescript"
+  ],
+  "author": "steven.lin@tron.network",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sun-protocol/permit2-sdk"
+  },
+  "bugs": "https://github.com/sun-protocol/permit2-sdk/issues",
+  "homepage": "https://github.com/sun-protocol/permit2-sdk#readme",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "tronweb": "^6.0.4",
+    "viem": "^2.37.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "prettier": "^3.4.0",
+    "typescript": "^5.7.0",
+    "vitest": "^2.0.0"
+  }
+}
