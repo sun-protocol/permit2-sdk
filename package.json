@@ -44,10 +44,10 @@
   "bugs": "https://github.com/sun-protocol/permit2-sdk/issues",
   "homepage": "https://github.com/sun-protocol/permit2-sdk#readme",
   "engines": {
-    "node": ">=20"
+    "node": "^22.23.4 || ^24.22.1 || >=26.12.1"
   },
   "dependencies": {
-    "tronweb": "^6.0.4",
+    "tronweb": "^6.5.2",
     "viem": "^2.37.5"
   },
   "devDependencies": {
