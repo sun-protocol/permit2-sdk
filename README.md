@@ -10,6 +10,9 @@ Permit2 enables token approvals to be shared and managed across different applic
 npm install @sun-protocol/permit2-sdk
 ```
 
+Requires TronWeb 6.5.2 or a compatible newer 6.x release. Node.js must satisfy
+`^22.23.4 || ^24.22.1 || >=26.12.1`, matching TronWeb's supported runtimes.
+
 ## Quick Start
 
 ```typescript
