@@ -1,6 +1,6 @@
 {
   "name": "@sun-protocol/permit2-sdk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Permit2 SDK for TRON — TypeScript library for Permit2 allowance transfers",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
